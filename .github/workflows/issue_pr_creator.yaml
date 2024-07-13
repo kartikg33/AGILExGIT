@@ -1,0 +1,12 @@
+on: 
+  issues:
+    types: [ opened ] # run this workflow only when a new issue is opened
+
+jobs:
+  create_issue_branch:
+    runs_on: ubuntu-latest
+    steps:
+      - name: Create Issue Branch
+        uses: robvanderleek/create-issue-branch@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
