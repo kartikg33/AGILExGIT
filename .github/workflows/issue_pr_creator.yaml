@@ -10,8 +10,9 @@ jobs:
         uses: robvanderleek/create-issue-branch@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        mode: immediate # creates the issue branch now (default is to create branch only when issue is assigned)
-        openPR: true # opens a new blank PR 
-        autoCloseIssue: true # closes the issue as soon as PR is merged
-        prSkipCI: true # skips any further CI triggered by opening a PR at this point in time
+        with:
+          mode: immediate # creates the issue branch now (default is to create branch only when issue is assigned)
+          openPR: true # opens a new blank PR 
+          autoCloseIssue: true # closes the issue as soon as PR is merged
+          prSkipCI: true # skips any further CI triggered by opening a PR at this point in time
 
