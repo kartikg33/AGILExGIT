@@ -9,3 +9,5 @@ Example top-level project README to demonstrate how to use this template.
 3. Requirements MUST ONLY be modified on issue branches in order to link changes to the appropriate Pull Request and Issue
 4. A user MUST be able to create an Issue for a new User Story (i.e. Feature Request)
 5. A user MUST be able to create an Issue to report a Bug
+6. The following setting in your GitHub repo MUST be enabled: `Settings` > `Actions` > `Allow GitHub Actions to create and approve pull requests`
+
